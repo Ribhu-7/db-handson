@@ -14,3 +14,7 @@ const dbSchema = mongoose.Schema({
   yearGrad: Number,
   gradStream: String
 })
+
+mongoose.connect(url,async(err,connection)=>{
+    if(err) console.log(err);
+    else console.log("Connection successful")
